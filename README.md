@@ -1,2 +1,2 @@
 # urbantis labs
-Urbantis - Producción multimedia + IA para propiedades premium
+Producción multimedia + IA aplicada
