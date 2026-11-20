@@ -105,6 +105,7 @@
 
   .video-responsive{ position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; }
   .video-responsive iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-responsive video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; background:#000; }
 
   .video-responsive-vertical{ position:relative; width:100%; aspect-ratio:9/16; overflow:hidden; }
   .video-responsive-vertical iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
@@ -284,11 +285,11 @@
       </p>
     </div>
 
-    <!-- Contenedor de video horizontal (16:9) responsivo con YouTube de Urbantis Labs -->
+    <!-- Contenedor de video horizontal (16:9): video propio alojado en el hosting (sin YouTube) -->
     <div class="reveal brackets bg-card rounded-sm overflow-hidden border mx-auto" style="border-color:var(--line); max-width:min(80%, calc((100vh - 270px) * 1.7778));">
       <span class="bl"></span><span class="br"></span>
       <div class="video-responsive">
-        <iframe src="https://www.youtube.com/embed/LqYWsYhK9vc?autoplay=1&mute=1&loop=1&playlist=LqYWsYhK9vc&controls=0&modestbranding=1&rel=0" title="URBANTIS Labs - Producción audiovisual + IA aplicada a tu negocio inmobiliario" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <video src="videos/urbantis-labs-presentacion.mp4" poster="images/urbantis-labs-presentacion-poster.webp" autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback aria-label="URBANTIS Labs - Producción audiovisual + IA aplicada a tu negocio inmobiliario"></video>
       </div>
     </div>
 
